@@ -1,0 +1,312 @@
+body{
+    background: url('world.png') no-repeat fixed border-box center;
+    background-size: 80%;
+}
+h1{
+    color: #997b66;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    text-align: center;
+    width: 1350px;
+}
+
+
+/*Se crea una cuadricula de 3 x 3 con los mismos valores */
+.container{
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    margin: 0 470px 0;
+}
+
+/* Cada tarjeta ocupa el ancho total del valor asignado */
+.container1,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6,
+.container7,
+.container8,
+.container9{
+    perspective: 1000px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Valores para todas las tarjetas*/
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9{
+    color: #ff5400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;    
+    position: relative;
+    text-align: center;    
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+    height: 100%;
+    width: 100%;
+}
+
+/*Tarjeta 1 */
+.container1 .card1:hover{
+    transform: rotateY(180deg);
+}
+
+/* Valores para cada tarjeta en particular*/
+.front-item1,
+.back-item1{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: #f4d58d 3px solid;
+    position: absolute;
+}
+.front-item1{
+    background-color: #f4f1de;
+    z-index: 2; /* Se cambia el orden de la capa para que aparezca en la parte frontal*/
+    backface-visibility: hidden;
+}
+.back-item1{
+    background: #ff5400;
+    color: #f4f1de;
+    transform: rotateY(180deg); /*Se rota la tarjeta de la parte de atras para que se pueda leer correctamente*/
+    z-index: 1;
+}
+
+
+
+/*Tarjeta 2*/
+.card2:hover{
+    transform: rotateY(180deg);
+}
+.front-item2,
+.back-item2{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: #f4d58d 3px solid;
+    position: absolute;
+}
+.front-item2{
+    background: #f4f1de;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back-item2{
+    background: #ff5400;
+    color: #f4f1de;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+
+/*Tarjeta 3*/
+.card3:hover{
+    transform: rotateY(180deg);
+}
+.front-item3,
+.back-item3{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: #f4d58d 3px solid;
+    position: absolute;
+}
+.front-item3{
+    background: #f4f1de;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back-item3{
+    background: #ff5400;
+    color: #f4f1de;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+
+/*Tarjeta 4*/
+.card4:hover{
+    transform: rotateY(180deg);
+}
+.front-item4,
+.back-item4{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: #f4d58d 3px solid;
+    position: absolute;
+}
+.front-item4{
+    background: #f4f1de;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back-item4{
+    background: #ff5400;
+    color: #f4f1de;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+
+/*Tarjeta 5*/
+.card5:hover{
+    transform: rotateY(180deg);
+}
+.front-item5,
+.back-item5{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: #f4d58d 3px solid;
+    position: absolute;
+}
+.front-item5{
+    background: #f4f1de;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back-item5{
+    background: #ff5400;
+    color: #f4f1de;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+
+/*Tarjeta 6*/
+.card6:hover{
+    transform: rotateY(180deg);
+}
+.front-item6,
+.back-item6{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: #f4d58d 3px solid;
+    position: absolute;
+}
+.front-item6{
+    background: #f4f1de;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back-item6{
+    background: #ff5400;
+    color: #f4f1de;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+
+/*Tarjeta 7*/
+.card7:hover{
+    transform: rotateY(180deg);
+}
+.front-item7,
+.back-item7{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: #f4d58d 3px solid;
+    position: absolute;
+}
+.front-item7{
+    background: #f4f1de;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back-item7{
+    background: #ff5400;
+    color: #f4f1de;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+
+/*Tarjeta 8*/
+.card8:hover{
+    transform: rotateY(180deg);
+}
+.front-item8,
+.back-item8{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: #f4d58d 3px solid;
+    position: absolute;
+}
+.front-item8{
+    background: #f4f1de;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back-item8{
+    background: #ff5400;
+    color: #f4f1de;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+
+/*Tarjeta 9*/
+.card9:hover{
+    transform: rotateY(180deg);
+}
+.front-item9,
+.back-item9{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: #f4d58d 3px solid;
+    position: absolute;
+}
+.front-item9{
+    background: #f4f1de;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back-item9{
+    background: #ff5400;
+    color: #f4f1de;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
